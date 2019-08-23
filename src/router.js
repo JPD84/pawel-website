@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/home'
-import About from './views/about'
+import Contact from './views/contact'
 import Competitions from './views/competitions'
 import Gear from './views/gear'
 import Training from './views/training'
@@ -17,9 +17,9 @@ const router = new Router({
 
     },
     {
-      path:'/about',
-      name: 'about',
-      component :About
+      path:'/contact',
+      name: 'contact',
+      component :Contact
 
     },
     {
