@@ -2,6 +2,7 @@
 
 <template lang="html">
   <h1>competitions</h1>
+  
 </template>
 
 <script>
