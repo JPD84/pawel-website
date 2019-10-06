@@ -6,6 +6,7 @@ import Competitions from './views/competitions'
 import Gear from './views/gear'
 import Training from './views/training'
 
+
 Vue.use(Router)
 
 const router = new Router({
@@ -40,7 +41,7 @@ const router = new Router({
       component :Training
 
     },
-  ]
-})
+  ],
+});
 
 export default router

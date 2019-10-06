@@ -37,6 +37,7 @@
 >
 <router-link :to="{ name: 'contact' }">contact</router-link>
 </span>
+>
 
 </nav>
 <router-view id='view'>
