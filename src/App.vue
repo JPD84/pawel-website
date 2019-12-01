@@ -106,8 +106,10 @@ body {
   text-shadow: 2px 2px 1px #941c2f;
   font-weight: 700;
 }
+.page-content {
+  color: #fff;
+}
 .page-content h1 {
-  opacity: 0.6;
   color: #d4d8dd;
   margin: 0;
   font-variant: medium-caps;
@@ -129,9 +131,29 @@ body {
 }
 .page-content h6 {
 }
-
+.page-content p {
+  font-size: 20px;
+  max-width: 800px;
+}
+.page-content p:only-child {
+  margin-left: auto;
+  margin-right: auto;
+}
+img{
+  max-width: 100%;
+}
 a {
   transition: all 0.25s ease-in-out;
+}
+
+.grid-container {
+  display: flex;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.grid-cell {
+  flex: 1;
 }
 
 @media screen and (min-width: 768px) {

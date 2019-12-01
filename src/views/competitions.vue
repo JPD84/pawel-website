@@ -5,8 +5,8 @@
     <h1>Competitions</h1>
     <carousel perPage=1 paginationActiveColor="#941c2f">
      <slide v-for="image in images">
-      
-       <img :src="`${publicPath}images/${image}`">
+       <img :src="`${publicPath}images/${image.src}`">
+       <p class="carousel-image-caption">{{image.caption}}</p>
      </slide>
     </carousel>
   </div>
@@ -18,18 +18,45 @@ export default {
   data() {
     return {
       publicPath: process.env.BASE_URL,
-      images:[
-        "GDYNIA_POLAND_1.jpg",
-        "GDYNIA_POLAND_2.jpg",
-        "GDYNIA_POLAND_3.jpg",
-        "SALOU_SPAIN_1.jpg",
-        "SALOU_SPAIN_2.jpg",
-        "SALOU_SPAIN_3.jpg",
-        "WARSAW_POLAND_1.jpg",
-        "WARSAW_POLAND_2.jpg",
-        "WARSAW_POLAND_3.jpg"
+      images: [
+        {
+          src: "GDYNIA_POLAND_1.jpg",
+          caption: "Lal lala"
+        },
+         {
+          src: "GDYNIA_POLAND_2.jpg",
+          caption: "test2"
+        },
+         {
+          src: "GDYNIA_POLAND_3.jpg",
+          caption: "test 3"
+        },
+         {
+          src: "SALOU_SPAIN_1.jpg",
+          caption: "test 4"
+        },
+          {
+          src: "SALOU_SPAIN_2.jpg",
+          caption: "test 5"
+        },
+          {
+          src: "SALOU_SPAIN_3.jpg",
+          caption: "test 6"
+        },
+          {
+          src: "WARSAW_POLAND_1.jpg",
+          caption: "test 7"
+        },
+         {
+          src: "WARSAW_POLAND_2.jpg",
+          caption: "test 8"
+        },
+         {
+          src: "WARSAW_POLAND_3.jpg",
+          caption: "test 9"
+        },
+      ]
 
-        ]
     };
   },
   components: {
@@ -46,3 +73,7 @@ export default {
 }
 
 </style>
+
+// add captions...
+// convert array item in objects, add caption text for each 
+// update template to render image AND caption
