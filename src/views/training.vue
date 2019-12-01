@@ -1,6 +1,6 @@
 <template lang="html">
 <div class='page-content'>
-  <h1>training</h1>
+  <h1>Training</h1>
 </div>
 </template>
 
