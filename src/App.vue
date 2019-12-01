@@ -43,7 +43,7 @@ export default {
 .navbar {
   display: flex;
   justify-content: space-evenly;
-  background-color: rgba(243, 25, 25, 0.5);
+  background-color: #941c2f;
   background-size: contain;
   font-family: "Lora", serif;
   font-weight: 400;
@@ -52,6 +52,19 @@ export default {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.navbar a {
+  display: block;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.25s ease-in-out;
+  border-radius: 4px;
+}
+.navbar a:hover,
+.navbar a:focus {
+  background-color: #000;
 }
 
 #app {
@@ -71,7 +84,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .page-content-container {
@@ -87,7 +100,7 @@ body {
   text-align: center;
   font-family: "Lora", serif;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 5px red;
+  text-shadow: 2px 2px 1px #941c2f;
   font-weight: 700;
 }
 .page-content h1 {
@@ -106,7 +119,12 @@ body {
 }
 
 a {
-  color: white;
-  font-size: 35px;
+  transition: all 0.25s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar ul {
+    display: flex;
+  }
 }
 </style>
