@@ -1,81 +1,60 @@
 <template>
   <div id="app">
-    <h1>Paweł Króliński</h1>
+    <h1 class="site-heading">Paweł Króliński</h1>
     <nav class="navbar">
-      <span
-      @mouseover="hover = true"
-      @mouseleave="hover = false"
-      :class="{ active: hover }"
-      >
-      <router-link :to="{ name: 'home' }">home</router-link>
-    </span>
-    <span
-    @mouseover="hover = true"
-    @mouseleave="hover = false"
-    :class="{ active: hover }"
-    >
-    <router-link :to="{ name: 'training' }">training</router-link>
-  </span>
-  <span
-  @mouseover="hover = true"
-  @mouseleave="hover = false"
-  :class="{ active: hover }"
-  >
-  <router-link :to="{ name: 'gear' }">gear</router-link>
-</span>
-<span
-@mouseover="hover = true"
-@mouseleave="hover = false"
-:class="{ active: hover }"
->
-<router-link :to="{ name: 'competitions' }">competitions</router-link>
-</span>
-<span
-@mouseover="hover = true"
-@mouseleave="hover = false"
-:class="{ active: hover }"
->
-<router-link :to="{ name: 'contact' }">contact</router-link>
-</span>
->
-
-</nav>
-<router-view id='view'>
-</router-view>
-
-</div>
+      <ul>
+        <li @mouseover="hover = true" @mouseleave="hover = false" :class="{ active: hover }">
+          <router-link :to="{ name: 'home' }">home</router-link>
+        </li>
+        <li @mouseover="hover = true" @mouseleave="hover = false" :class="{ active: hover }">
+          <router-link :to="{ name: 'training' }">training</router-link>
+        </li>
+        <li @mouseover="hover = true" @mouseleave="hover = false" :class="{ active: hover }">
+          <router-link :to="{ name: 'gear' }">gear</router-link>
+        </li>
+        <li @mouseover="hover = true" @mouseleave="hover = false" :class="{ active: hover }">
+          <router-link :to="{ name: 'competitions' }">competitions</router-link>
+        </li>
+        <li @mouseover="hover = true" @mouseleave="hover = false" :class="{ active: hover }">
+          <router-link :to="{ name: 'contact' }">contact</router-link>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-content-container">
+      <router-view id="view"></router-view>
+    </div>
+  </div>
 </template>
 
 <script>
-
-
 export default {
-  name: 'app',
-  data(){
-    return{
-      hover: false,
+  name: "app",
+  data() {
+    return {
+      hover: false
     };
   }
-
-}
+};
 </script>
 
 <style>
-.navbar{
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
+
+.navbar {
   display: flex;
   justify-content: space-evenly;
   background-color: rgba(243, 25, 25, 0.5);
-  background-size:contain;
-  font-family: Permanent Marker;
-  font-variant: normal;
-
+  background-size: contain;
+  font-family: "Lora", serif;
+  font-weight: 400;
+}
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-
 #app {
-  font-family: Permanent Marker;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
   text-align: center;
   color: #2c3e50;
   margin-top: 100px;
@@ -91,39 +70,43 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
-h1 {
+.page-content-container {
+  background-color: #000;
+}
+
+.page-content h1,
+.site-heading {
   color: #d4d8dd;
-  margin:0;
+  margin: 0;
   font-variant: medium-caps;
   font-size: 80px;
   text-align: center;
-  font-family: Permanent Marker;
+  font-family: "Lora", serif;
   margin-bottom: 20px;
   text-shadow: 2px 2px 5px red;
+  font-weight: 700;
+}
+.page-content h1 {
+  opacity: 0.6;
+}
+
+.page-content h2 {
+}
+.page-content h3 {
+}
+.page-content h4 {
+}
+.page-content h5 {
+}
+.page-content h6 {
 }
 
 a {
   color: white;
   font-size: 35px;
-
 }
-
-span:hover{
-  background: black;
-}
-
-
-
-/* h1#view {
-div.transbox
-margin: 30px;
-background-color: #ffffff;
-border: 1px solid black;
-opacity: 0.6;
-filter: alpha(opacity=60);
-width: 250px;
-} */
-
 </style>
