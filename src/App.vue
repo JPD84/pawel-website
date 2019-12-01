@@ -3,19 +3,19 @@
     <h1 class="site-heading">Paweł Króliński</h1>
     <nav class="navbar">
       <ul>
-        <li @mouseover="hover = true" @mouseleave="hover = false" :class="{ active: hover }">
+        <li>
           <router-link :to="{ name: 'home' }">home</router-link>
         </li>
-        <li @mouseover="hover = true" @mouseleave="hover = false" :class="{ active: hover }">
+        <li>
           <router-link :to="{ name: 'training' }">training</router-link>
         </li>
-        <li @mouseover="hover = true" @mouseleave="hover = false" :class="{ active: hover }">
+        <li>
           <router-link :to="{ name: 'gear' }">gear</router-link>
         </li>
-        <li @mouseover="hover = true" @mouseleave="hover = false" :class="{ active: hover }">
+        <li>
           <router-link :to="{ name: 'competitions' }">competitions</router-link>
         </li>
-        <li @mouseover="hover = true" @mouseleave="hover = false" :class="{ active: hover }">
+        <li>
           <router-link :to="{ name: 'contact' }">contact</router-link>
         </li>
       </ul>
