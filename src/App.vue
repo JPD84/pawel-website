@@ -68,6 +68,12 @@ export default {
   background-color: #000;
 }
 
+.grid-cell-ista-Widget{
+  width:100%;
+  border:0;overflow:hidden;
+
+}
+
 #app {
   text-align: center;
   color: #2c3e50;
