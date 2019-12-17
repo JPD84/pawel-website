@@ -39,7 +39,7 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
-
+@import url("./vendor/flexboxgrid.min.css");
 .navbar {
   display: flex;
   justify-content: space-evenly;
