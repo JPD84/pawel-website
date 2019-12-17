@@ -4,19 +4,19 @@
     <nav class="navbar">
       <ul>
         <li>
-          <router-link :to="{ name: 'home' }">home</router-link>
+          <router-link :to="{ name: 'home' }">Home</router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'training' }">training</router-link>
+          <router-link :to="{ name: 'training' }">Training</router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'gear' }">gear</router-link>
+          <router-link :to="{ name: 'gear' }">Gear</router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'competitions' }">competitions</router-link>
+          <router-link :to="{ name: 'competitions' }">Competitions</router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'contact' }">contact</router-link>
+          <router-link :to="{ name: 'contact' }">Contact</router-link>
         </li>
       </ul>
     </nav>
@@ -46,7 +46,8 @@ export default {
   background-color: #941c2f;
   background-size: contain;
   font-family: "Lora", serif;
-  font-weight: 400;
+  font-weight: 700;
+  
 }
 .navbar ul {
   list-style: none;
@@ -56,7 +57,7 @@ export default {
 .navbar a {
   display: block;
   color: white;
-  font-size: 1.5rem;
+  font-size: 2.0rem;
   text-decoration: none;
   padding: 0.5rem 1rem;
   transition: all 0.25s ease-in-out;
@@ -65,6 +66,12 @@ export default {
 .navbar a:hover,
 .navbar a:focus {
   background-color: #000;
+}
+
+.grid-cell-ista-Widget{
+  width:100%;
+  border:0;overflow:hidden;
+
 }
 
 #app {
@@ -89,22 +96,35 @@ body {
 
 .page-content-container {
   background-color: #000;
+  max-width: 1010px;
+  padding: 20px;
+  margin: 0 auto;
 }
 
-.page-content h1,
 .site-heading {
   color: #d4d8dd;
   margin: 0;
   font-variant: medium-caps;
-  font-size: 80px;
+  font-size: 90px;
   text-align: center;
   font-family: "Lora", serif;
   margin-bottom: 20px;
   text-shadow: 2px 2px 1px #941c2f;
   font-weight: 700;
 }
+.page-content {
+  color: #fff;
+}
 .page-content h1 {
-  opacity: 0.6;
+  color: #d4d8dd;
+  margin: 0;
+  font-variant: medium-caps;
+  font-size: 60px;
+  text-align: center;
+  font-family: "Lora", serif;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 1px #941c2f;
+  font-weight: 700;
 }
 
 .page-content h2 {
@@ -117,9 +137,29 @@ body {
 }
 .page-content h6 {
 }
-
+.page-content p {
+  font-size: 20px;
+  max-width: 800px;
+}
+.page-content p:only-child {
+  margin-left: auto;
+  margin-right: auto;
+}
+img{
+  max-width: 100%;
+}
 a {
   transition: all 0.25s ease-in-out;
+}
+
+.grid-container {
+  display: flex;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.grid-cell {
+  flex: 1;
 }
 
 @media screen and (min-width: 768px) {
