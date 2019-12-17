@@ -5,9 +5,10 @@
       <div class="grid-cell"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
     </div>
     <div class="grid-container">
-      <div class="grid-cell-ista-Widget">instagram feed goes here - <src="https://cdn.lightwidget.com/widgets/lightwidget.js"><src="//lightwidget.com/widgets/369694c428b859cd93efdee95abf1cfa.html" scrolling="no" allowtransparency="true" class="lightwidget-widget"></div>
+      <div class="grid-cell" id="instagram-widget">
+        <iframe src="//lightwidget.com/widgets/39cf7236a34f5d77b98f92eebec4255f.html" scrolling="no" allowtransparency="true" class="lightwidget-widget"></iframe>
+      </div>
       <div class="grid-cell"><img :src="`${publicPath}images/BIKE_POLAND_2.jpg`"></div>
-     
     </div>
   </div>
 </template>
@@ -16,11 +17,26 @@
 export default {
   data() {
     return {
-      publicPath: process.env.BASE_URL, 
-    }
+      publicPath: process.env.BASE_URL
+    };
+  },
+  mounted() {
+    // LOAD THE LIGHTWIDGET SCRIPT ON COMPONENT MOUNT
+    // vue lifecycle - https://vuejs.org/v2/guide/instance.html#Instance-Lifecycle-Hooks
+    const lightwidgetScript = document.createElement("script");
+    lightwidgetScript.setAttribute(
+      "src",
+      "https://cdn.lightwidget.com/widgets/lightwidget.js"
+    );
+    document.body.appendChild(lightwidgetScript);
   }
-}
+};
 </script>
 
 <style lang="css" scoped>
+.lightwidget-widget {
+  width: 100%;
+  border: 0;
+  overflow: hidden;
+}
 </style>
