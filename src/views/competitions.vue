@@ -23,40 +23,44 @@ export default {
           src: "GDYNIA_POLAND_1.jpg",
           caption: "Gdynia Poland"
         },
-         {
+        {
           src: "GDYNIA_POLAND_2.jpg",
           caption: "Gdynia Poland"
         },
-         {
+        {
           src: "GDYNIA_POLAND_3.jpg",
           caption: "Gdynia Poland"
         },
-         {
+        {
           src: "SALOU_SPAIN_1.jpg",
           caption: "Salou Spain 2018"
         },
-          {
+        {
           src: "SALOU_SPAIN_2.jpg",
           caption: "Salou Spain 2018"
         },
-          {
+        {
           src: "SALOU_SPAIN_3.jpg",
           caption: "Salou Spain 2018"
         },
-          {
+        {
           src: "WARSAW_POLAND_1.jpg",
           caption: "PZU Marathon Warsaw Poland 2018"
         },
-         {
+        {
           src: "WARSAW_POLAND_2.jpg",
           caption: "PZU Marathon Warsaw Poland 2018"
         },
-         {
+        {
           src: "WARSAW_POLAND_3.jpg",
+<<<<<<< HEAD
           caption: "PZU Marathon Warsaw Poland 2018"
         },
+=======
+          caption: "test 9"
+        }
+>>>>>>> 2ddbc710b8cc87fff4c3d39a1752b273d823909b
       ]
-
     };
   },
   components: {
@@ -67,11 +71,14 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.VueCarousel img{
-  height: 400px; 
-  max-width: 100%; 
+.VueCarousel img {
+  height: 400px;
+  max-width: 100%;
 }
-
+.carousel-image-caption {
+  margin: 10px 0 0;
+  max-width: none;
+}
 </style>
 
 // add captions...
