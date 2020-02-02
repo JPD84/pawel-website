@@ -21,39 +21,39 @@ export default {
       images: [
         {
           src: "GDYNIA_POLAND_1.jpg",
-          caption: "Lal lala"
+          caption: "Gdynia Poland"
         },
          {
           src: "GDYNIA_POLAND_2.jpg",
-          caption: "test2"
+          caption: "Gdynia Poland"
         },
          {
           src: "GDYNIA_POLAND_3.jpg",
-          caption: "test 3"
+          caption: "Gdynia Poland"
         },
          {
           src: "SALOU_SPAIN_1.jpg",
-          caption: "test 4"
+          caption: "Salou Spain 2018"
         },
           {
           src: "SALOU_SPAIN_2.jpg",
-          caption: "test 5"
+          caption: "Salou Spain 2018"
         },
           {
           src: "SALOU_SPAIN_3.jpg",
-          caption: "test 6"
+          caption: "Salou Spain 2018"
         },
           {
           src: "WARSAW_POLAND_1.jpg",
-          caption: "test 7"
+          caption: "PZU Marathon Warsaw Poland 2018"
         },
          {
           src: "WARSAW_POLAND_2.jpg",
-          caption: "test 8"
+          caption: "PZU Marathon Warsaw Poland 2018"
         },
          {
           src: "WARSAW_POLAND_3.jpg",
-          caption: "test 9"
+          caption: "PZU Marathon Warsaw Poland 2018"
         },
       ]
 
