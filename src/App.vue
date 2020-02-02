@@ -10,7 +10,7 @@
           <router-link :to="{ name: 'training' }">Training</router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'gear' }">Gear</router-link>
+          <router-link :to="{ name: 'gear' }">Bike</router-link>
         </li>
         <li>
           <router-link :to="{ name: 'competitions' }">Competitions</router-link>
@@ -204,7 +204,7 @@ a {
 }
 .footer ul li {
   display: inline-block;
-  margin: 0 1rem;
+  margin: 0.25rem 1rem;
 }
 
 @media screen and (min-width: 768px) {

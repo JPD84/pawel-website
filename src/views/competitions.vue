@@ -54,7 +54,7 @@ export default {
         {
           src: "WARSAW_POLAND_3.jpg",
           caption: "PZU Marathon Warsaw Poland 2018"
-        },
+        }
       ]
     };
   },
@@ -67,12 +67,17 @@ export default {
 
 <style lang="css" scoped>
 .VueCarousel img {
-  height: 400px;
+  height: 300px;
   max-width: 100%;
 }
 .carousel-image-caption {
   margin: 10px 0 0;
   max-width: none;
+}
+@media screen and (min-width: 768px) {
+  .VueCarousel img {
+    height: 400px;
+  }
 }
 </style>
 
