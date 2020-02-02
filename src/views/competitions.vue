@@ -23,40 +23,39 @@ export default {
           src: "GDYNIA_POLAND_1.jpg",
           caption: "Lal lala"
         },
-         {
+        {
           src: "GDYNIA_POLAND_2.jpg",
           caption: "test2"
         },
-         {
+        {
           src: "GDYNIA_POLAND_3.jpg",
           caption: "test 3"
         },
-         {
+        {
           src: "SALOU_SPAIN_1.jpg",
           caption: "test 4"
         },
-          {
+        {
           src: "SALOU_SPAIN_2.jpg",
           caption: "test 5"
         },
-          {
+        {
           src: "SALOU_SPAIN_3.jpg",
           caption: "test 6"
         },
-          {
+        {
           src: "WARSAW_POLAND_1.jpg",
           caption: "test 7"
         },
-         {
+        {
           src: "WARSAW_POLAND_2.jpg",
           caption: "test 8"
         },
-         {
+        {
           src: "WARSAW_POLAND_3.jpg",
           caption: "test 9"
-        },
+        }
       ]
-
     };
   },
   components: {
@@ -67,11 +66,14 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.VueCarousel img{
-  height: 400px; 
-  max-width: 100%; 
+.VueCarousel img {
+  height: 400px;
+  max-width: 100%;
 }
-
+.carousel-image-caption {
+  margin: 10px 0 0;
+  max-width: none;
+}
 </style>
 
 // add captions...
