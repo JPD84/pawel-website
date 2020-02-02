@@ -53,13 +53,8 @@ export default {
         },
         {
           src: "WARSAW_POLAND_3.jpg",
-<<<<<<< HEAD
           caption: "PZU Marathon Warsaw Poland 2018"
         },
-=======
-          caption: "test 9"
-        }
->>>>>>> 2ddbc710b8cc87fff4c3d39a1752b273d823909b
       ]
     };
   },
